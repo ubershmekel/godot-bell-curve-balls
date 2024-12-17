@@ -7,12 +7,14 @@ func _ready():
 	var view = get_viewport().get_visible_rect().size
 	#print(view)
 	var xcount = 20
-	var ycount = 7
+	var ycount = 8
 	var rowOffset = 36
 	var xInit = 46
 	var yInit = 110
-	var xgap = (view[0] - xInit) / xcount
-	var ygap = 50
+	var rectWidth = 1160
+	var xgap = (rectWidth - xInit) / xcount
+	#var xgap = (view[0] - xInit) / xcount
+	var ygap = 40
 	for rowIndex in range(ycount):
 		var offsetX = rowOffset
 		if rowIndex % 2 == 0:
